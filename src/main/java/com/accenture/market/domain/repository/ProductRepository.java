@@ -1,2 +1,17 @@
-package com.accenture.market.domain.repository;public interface ProductRepository {
+package com.accenture.market.domain.repository;
+
+import com.accenture.market.domain.Product;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface ProductRepository {
+
+    List<Product> getAll();
+    Optional<List<Product>> getByCategory(int categoryId);
+    Optional<List<Product>> getScarseProducts(int quantity);
+    Optional<List<Product>> getProduct(int productId);
+    Product save(Product product);
+    void delete(int productId);
+
 }
