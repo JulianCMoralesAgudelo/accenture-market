@@ -1,6 +1,5 @@
 package com.accenture.market.persistence.entity;
 
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -12,7 +11,7 @@ public class Cliente {
     private String id;
     private String nombre;
     private String apellidos;
-    private long celular;
+    private Long celular;
     private String direccion;
 
     @Column(name = "correo_electronico")
@@ -45,7 +44,7 @@ public class Cliente {
         this.apellidos = apellidos;
     }
 
-    public long getCelular() {
+    public Long getCelular() {
         return celular;
     }
 
@@ -68,4 +67,5 @@ public class Cliente {
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
     }
+
 }

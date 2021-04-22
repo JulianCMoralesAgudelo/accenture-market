@@ -1,7 +1,5 @@
 package com.accenture.market.persistence.mapper;
 
-
-
 import com.accenture.market.domain.Category;
 import com.accenture.market.persistence.entity.Categoria;
 import org.mapstruct.InheritInverseConfiguration;

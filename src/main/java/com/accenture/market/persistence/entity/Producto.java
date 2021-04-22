@@ -2,9 +2,8 @@ package com.accenture.market.persistence.entity;
 
 import javax.persistence.*;
 
-
 @Entity
-@Table(name= "productos")
+@Table(name = "productos")
 public class Producto {
 
     @Id
@@ -17,28 +16,20 @@ public class Producto {
     @Column(name = "id_categoria")
     private Integer idCategoria;
 
-    @Column(name = "codigo-barras")
+    @Column(name = "codigo_barras")
     private String codigoBarras;
 
-    @Column(name = "precio-venta")
+    @Column(name = "precio_venta")
     private Double precioVenta;
 
-    @Column(name = "cantidad-stock")
+    @Column(name = "cantidad_stock")
     private Integer cantidadStock;
 
     private Boolean estado;
 
     @ManyToOne
-    @JoinColumn(name = "id_categoria", insertable = false,updatable = false)
-    private  Categoria categoria;
-
-    public Categoria getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
-    }
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
+    private Categoria categoria;
 
     public Integer getIdProducto() {
         return idProducto;
@@ -96,4 +87,11 @@ public class Producto {
         this.estado = estado;
     }
 
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 }

@@ -1,6 +1,5 @@
 package com.accenture.market.persistence;
 
-
 import com.accenture.market.domain.Product;
 import com.accenture.market.domain.repository.ProductRepository;
 import com.accenture.market.persistence.crud.ProductoCrudRepository;
@@ -14,9 +13,9 @@ import java.util.Optional;
 
 @Repository
 public class ProductoRepository implements ProductRepository {
-
     @Autowired
     private ProductoCrudRepository productoCrudRepository;
+
     @Autowired
     private ProductMapper mapper;
 
