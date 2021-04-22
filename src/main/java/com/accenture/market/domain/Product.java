@@ -3,9 +3,9 @@ package com.accenture.market.domain;
 
 public class Product {
     private int productId;
-    private String nombre;
+    private String name;
     private int categoryId;
-    private double precio;
+    private double price;
     private int stock;
     private boolean active;
     private Category category;
@@ -18,12 +18,12 @@ public class Product {
         this.productId = productId;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getCategoryId() {
@@ -34,12 +34,12 @@ public class Product {
         this.categoryId = categoryId;
     }
 
-    public double getPrecio() {
-        return precio;
+    public double getPrice() {
+        return price;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public int getStock() {

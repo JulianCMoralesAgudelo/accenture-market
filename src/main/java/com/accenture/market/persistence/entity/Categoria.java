@@ -17,7 +17,15 @@ public class Categoria {
 
     @OneToMany(mappedBy = "categoria")
     private List<Producto> productos;
-    // La relacion que respalda este atributo es la tabla categoria
+
+    public List<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
+    }
+// La relacion que respalda este atributo es la tabla categoria
 
     public Integer getIdCategoria() {
         return idCategoria;
